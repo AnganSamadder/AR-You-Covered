@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/state_farm_light_gray">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/state_farm_red"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="32dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/sf_logo"
+            android:contentDescription="State Farm Logo" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Settings"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="-16dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="32dp">
+
+            <!-- Profile Picture Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settings_card_background"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <!-- Profile Picture Frame -->
+                <FrameLayout
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/settings_profile_background">
+
+                    <ImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="132dp"
+                        android:layout_height="132dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_outline"
+                        android:src="@drawable/sf_logo"
+                        android:contentDescription="Profile Picture"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true" />
+
+                </FrameLayout>
+
+                <!-- Upload Button -->
+                <Button
+                    android:id="@+id/upload_button"
+                    android:layout_width="160dp"
+                    android:layout_height="48dp"
+                    android:text="Change Photo"
+                    android:background="@drawable/settings_button_secondary"
+                    android:textColor="@color/state_farm_red"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to upload from camera or gallery"
+                    android:textSize="12sp"
+                    android:textColor="@color/state_farm_gray"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <!-- Personal Information Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settings_card_background"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Card Title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Information"
+                    android:textSize="20sp"
+                    android:textColor="@color/state_farm_red"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <!-- Name Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textColor="@color/state_farm_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <EditText
+                        android:id="@+id/name_input"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="56dp"
+                        android:hint="Enter your full name"
+                        android:enabled="false"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="16dp"
+                        android:textColor="@color/state_farm_gray"
+                        android:textColorHint="@color/state_farm_gray"
+                        android:background="@drawable/settings_input_background"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/edit_name"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="12dp"
+                        android:src="@drawable/ic_edit_red"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Edit Name"
+                        android:padding="12dp" />
+                </LinearLayout>
+
+                <!-- Job Title Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job Title"
+                    android:textColor="@color/state_farm_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <EditText
+                        android:id="@+id/job_input"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="56dp"
+                        android:hint="Enter your job title"
+                        android:enabled="false"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="16dp"
+                        android:textColor="@color/state_farm_gray"
+                        android:textColorHint="@color/state_farm_gray"
+                        android:background="@drawable/settings_input_background"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/edit_job"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="12dp"
+                        android:src="@drawable/ic_edit_red"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Edit Job"
+                        android:padding="12dp" />
+                </LinearLayout>
+
+                <!-- Fun Fact Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fun Fact"
+                    android:textColor="@color/state_farm_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <EditText
+                        android:id="@+id/fact_input"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="56dp"
+                        android:hint="Share a fun fact about yourself"
+                        android:enabled="false"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="16dp"
+                        android:textColor="@color/state_farm_gray"
+                        android:textColorHint="@color/state_farm_gray"
+                        android:background="@drawable/settings_input_background"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/edit_fact"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="12dp"
+                        android:src="@drawable/ic_edit_red"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Edit Fun Fact"
+                        android:padding="12dp" />
+                </LinearLayout>
+
+                <!-- Bio Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Biography"
+                    android:textColor="@color/state_farm_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="top"
+                    android:layout_marginBottom="0dp">
+
+                    <EditText
+                        android:id="@+id/bio_input"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="80dp"
+                        android:hint="Tell us about yourself..."
+                        android:enabled="false"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="16dp"
+                        android:textColor="@color/state_farm_gray"
+                        android:textColorHint="@color/state_farm_gray"
+                        android:background="@drawable/settings_input_background"
+                        android:textSize="16sp"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3" />
+
+                    <ImageButton
+                        android:id="@+id/edit_bio"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="12dp"
+                        android:src="@drawable/ic_edit_red"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Edit Bio"
+                        android:padding="12dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Action Buttons Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settings_card_background"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Card Title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Actions"
+                    android:textSize="20sp"
+                    android:textColor="@color/state_farm_red"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <!-- Add to World Button -->
+                <Button
+                    android:id="@+id/add_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="Add Self to AR World"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/settings_button_primary"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="Save Changes"
+                    android:textSize="16sp"
+                    android:textColor="@color/state_farm_red"
+                    android:textStyle="bold"
+                    android:background="@drawable/settings_button_secondary"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- RED COLOR STANDARDIZATION SYSTEM -->
+    <!-- ALL red colors in this app now use #E22925 as the base -->
+    <!-- Use @color/red for any red color needs - it automatically uses #E22925 -->
+    <color name="red">#E22925</color>
+
+    <!-- State Farm brand colors - all red variants use #E22925 as base -->
+    <!-- Primary red: Use for main brand elements, buttons, backgrounds -->
+    <color name="state_farm_red">#E22925</color>
+    
+    <!-- Light red: Use for hover states, lighter accents -->
+    <color name="state_farm_red_light">#F24742</color>
+    
+    <!-- Dark red: Use for pressed states, darker buttons, secondary elements -->
+    <color name="state_farm_red_dark">#B21E1B</color>
+    
+    <!-- Very dark red: Use for deep shadows, very dark variants -->
+    <color name="state_farm_dark_red">#A11D1A</color>
+    
+    <color name="state_farm_gray">#4A4A4A</color>
+    <color name="state_farm_light_gray">#F5F5F5</color>
+
+    <!-- Additional gray variants for authentication layouts -->
+    <color name="gray">#888888</color>
+    <color name="light_gray">#E5E5E5</color>
+    <color name="dark_gray">#333333</color>
+
+    <!-- Background colors -->
+    <color name="background_light">#FFFFFFFF</color>
+    <color name="background_dark">#FF121212</color>
+    <color name="surface_light">#FFFFFFFF</color>
+    <color name="surface_dark">#FF1E1E1E</color>
+
+    <!-- Leaderboard colors -->
+    <color name="gold">#FFD700</color>
+    <color name="gold_dark">#DAA520</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="silver_dark">#A0A0A0</color>
+    <color name="bronze">#CD7F32</color>
+    <color name="bronze_dark">#B8732C</color>
+    
+    <!-- Leaderboard themed transparency colors -->
+    <color name="red_transparent_88">#88E22925</color>
+    <color name="red_transparent_44">#44E22925</color>
+    <color name="red_dark_transparent_44">#44B21E1B</color>
+    <color name="red_dark_transparent_22">#22B21E1B</color>
+    <color name="red_transparent_33">#33E22925</color>
+</resources>

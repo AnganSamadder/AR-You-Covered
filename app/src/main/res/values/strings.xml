@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">AR You Covered?</string>
+
+    <!-- Mapbox Configuration -->
+    <string name="mapbox_access_token">pk.eyJ1IjoiYW5nYW4iLCJhIjoiY21jNDlpOXlvMGNxNDJzcTV0MGR6M3pkZSJ9.in9CYBACYyOfqKPc6Oi8qQ</string>
+
+    <!-- Game Messages -->
+    <string name="welcome_message">Welcome to AR You Covered?!</string>
+    <string name="catch_jake_message">You caught Jake!</string>
+    <string name="catch_employee_message">You found a colleague!</string>
+    <string name="catch_fact_message">You discovered a fascinating fact!</string>
+    <string name="asset_moved_message">Missed! The asset moved to a new location.</string>
+
+    <!-- UI Text -->
+    <string name="points_format">Points: %d</string>
+    <string name="assets_remaining_format">Assets: %d</string>
+    <string name="attempts_remaining_format">Attempts: %d</string>
+
+    <!-- Permission Messages -->
+    <string name="camera_permission_required">Camera permission is required for AR features</string>
+    <string name="location_permission_required">Location permission is required to place assets</string>
+
+    <!-- AR Instructions -->
+    <string name="ar_instruction_look_around">Look around to find AR assets!</string>
+    <string name="ar_instruction_tap_to_catch">Tap an asset to catch it!</string>
+    <string name="ar_instruction_get_closer">Get closer to catch this asset</string>
+
+    <!-- Activity Titles -->
+    <string name="title_activity_main">Main Activity</string>
+    <string name="title_activity_game">Game Activity</string>
+    <string name="title_activity_map">Map Activity</string>
+    <string name="title_activity_sign_in">Sign In</string>
+    <string name="title_activity_signin">Sign In (Alt)</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_verify_code">Verify Code</string>
+    <string name="title_settings_activity">Settings Activity</string>
+    <string name="title_activity_collections">Collections</string>
+    <string name="title_activity_leaderboard">Top AR Neighbor</string>
+    <string name="title_activity_store">Store</string>
+
+    <!-- Collections Activity -->
+    <string name="collections_title">Collections</string>
+    <string name="artifacts_section">Artifacts</string>
+    <string name="people_section">People</string>
+</resources>

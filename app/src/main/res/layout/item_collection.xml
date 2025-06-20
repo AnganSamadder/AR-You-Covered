@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Collection item container -->
+    <FrameLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/collection_item_background"
+        android:layout_marginBottom="8dp">
+
+        <!-- Question mark for all items -->
+        <TextView
+            android:id="@+id/question_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="?"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:shadowColor="@color/state_farm_red_dark"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:visibility="visible" />
+
+        <!-- Discovered item content would go here in the future -->
+
+    </FrameLayout>
+
+    <!-- Item name -->
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+</LinearLayout> 

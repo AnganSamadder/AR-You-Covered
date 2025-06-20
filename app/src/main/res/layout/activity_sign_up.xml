@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red"
+    android:fitsSystemWindows="false">
+
+    <!-- Red header bar that extends into safe area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="60dp"
+        android:paddingBottom="32dp">
+
+        <!-- State Farm Logo -->
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="90dp"
+            android:src="@drawable/sf_logo"
+            android:contentDescription="State Farm Logo"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Complete Profile Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete Your Profile"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tell us about yourself"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:alpha="0.9"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <!-- Main Content with white background -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Profile Picture Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Picture"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Profile Picture Container -->
+                <FrameLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/settings_profile_background"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="152dp"
+                        android:layout_height="152dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/settings_profile_background"
+                        android:src="@drawable/ic_person"
+                        android:clipToOutline="true" />
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/upload_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="UPLOAD PICTURE"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:background="@drawable/settings_button_secondary"
+                    android:paddingHorizontal="32dp" />
+
+            </LinearLayout>
+
+            <!-- Personal Information Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Information"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Name Input -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Enter your full name"
+                    android:background="@drawable/settings_input_background"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="16dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/gray"
+                    android:layout_marginBottom="20dp"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="16dp" />
+
+                <!-- Job Title Input -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Title"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/job_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="What do you do?"
+                    android:background="@drawable/settings_input_background"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="16dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/gray"
+                    android:layout_marginBottom="20dp"
+                    android:drawableStart="@drawable/ic_work"
+                    android:drawablePadding="16dp" />
+
+                <!-- Bio Input -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bio"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/bio_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Tell us about yourself..."
+                    android:background="@drawable/settings_input_background"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="16dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/gray"
+                    android:gravity="top|start"
+                    android:maxLines="4"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Fun Facts Input -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fun Facts"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/facts_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Share something interesting about yourself..."
+                    android:background="@drawable/settings_input_background"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="16dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/gray"
+                    android:gravity="top|start"
+                    android:maxLines="4" />
+
+            </LinearLayout>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="COMPLETE SIGN UP"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:background="@drawable/store_redeem_button"
+                android:layout_marginTop="32dp"
+                android:elevation="4dp" />
+
+            <!-- Privacy Notice -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By completing sign up, you agree to our Terms of Service and Privacy Policy"
+                android:textColor="@color/state_farm_gray"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Red circle base (outer) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/red" />
+            <size
+                android:width="70dp"
+                android:height="70dp" />
+        </shape>
+    </item>
+    
+    <!-- White circle middle -->
+    <item android:top="6dp" android:bottom="6dp" android:left="6dp" android:right="6dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    
+    <!-- Red circle inner (smallest) -->
+    <item android:top="11dp" android:bottom="11dp" android:left="11dp" android:right="11dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/red" />
+        </shape>
+    </item>
+</layer-list> 

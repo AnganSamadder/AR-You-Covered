@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red"
+    android:fitsSystemWindows="false">
+
+    <!-- Red header bar that extends into safe area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="60dp"
+        android:paddingBottom="32dp">
+
+        <!-- State Farm Logo -->
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="90dp"
+            android:src="@drawable/sf_logo"
+            android:contentDescription="State Farm Logo"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Welcome Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in to continue"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:alpha="0.9"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <!-- Main Content with white background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Phone Input Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter your phone number"
+                android:inputType="phone"
+                android:background="@drawable/settings_input_background"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="16dp"
+                android:textSize="18sp"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/gray"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="16dp" />
+
+        </LinearLayout>
+
+        <!-- Continue Button -->
+        <Button
+            android:id="@+id/verify_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="CONTINUE"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/store_redeem_button"
+            android:layout_marginTop="32dp"
+            android:elevation="4dp" />
+
+        <!-- Additional Info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We'll send you a verification code to confirm your phone number"
+            android:textColor="@color/state_farm_gray"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Spacer to push help section to bottom -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Help Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need help? "
+                android:textColor="@color/state_farm_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Support"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

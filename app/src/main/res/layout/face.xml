@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="#00000000">
+    <ImageView
+        android:id="@+id/bgImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/farm_uniform"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:scaleType="centerInside"/>
+</FrameLayout>

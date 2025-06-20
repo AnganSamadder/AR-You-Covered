@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/regular_item_background"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <!-- Rank/Crown Container -->
+    <FrameLayout
+        android:id="@+id/rank_background"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/regular_rank_background"
+        android:layout_gravity="center_vertical">
+
+        <!-- Crown Icon for Winner (behind text) -->
+        <ImageView
+            android:id="@+id/crown_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_crown"
+            android:visibility="gone"
+            android:tint="@color/red" />
+
+        <!-- Rank Number (on top of crown) -->
+        <TextView
+            android:id="@+id/rank_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="#1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:elevation="2dp" />
+
+    </FrameLayout>
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:text="Player Name"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <!-- Score -->
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="99,999"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:gravity="end" />
+
+</LinearLayout> 

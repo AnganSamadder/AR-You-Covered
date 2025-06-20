@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red"
+    android:fitsSystemWindows="false">
+
+    <!-- Red header bar that extends into safe area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="60dp"
+        android:paddingBottom="32dp">
+
+        <!-- State Farm Logo -->
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="90dp"
+            android:src="@drawable/sf_logo"
+            android:contentDescription="State Farm Logo"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Verification Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Your Phone"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the code we sent you"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:alpha="0.9"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <!-- Main Content with white background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Verification Code Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verification Code"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/code_input"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter 6-digit code"
+                android:inputType="number"
+                android:background="@drawable/settings_input_background"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="16dp"
+                android:textSize="20sp"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/gray"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:maxLength="6"
+                android:drawableStart="@drawable/ic_security"
+                android:drawablePadding="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Code expires in 5 minutes"
+                android:textColor="@color/state_farm_gray"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+
+        <!-- Confirm Button -->
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="VERIFY &amp; CONTINUE"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/store_redeem_button"
+            android:layout_marginTop="32dp"
+            android:elevation="4dp" />
+
+        <!-- Resend Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Didn't receive the code? "
+                android:textColor="@color/state_farm_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/resend_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESEND"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!-- Spacer to push back option to bottom -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Back Option -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrong number? "
+                android:textColor="@color/state_farm_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GO BACK"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

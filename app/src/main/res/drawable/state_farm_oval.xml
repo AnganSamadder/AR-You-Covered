@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="83dp"
+    android:height="59dp"
+    android:viewportWidth="87"
+    android:viewportHeight="61">
+    
+    <!-- Single State Farm Oval -->
+    <path
+        android:fillColor="@color/state_farm_red"
+        android:pathData="M 21 44 C 26 47 33.5 49.5 41.5 49.5 C 49.5 49.5 57 47.5 62.5 44 C 68 41 71 36.5 71 32 C 71 27.5 68 23 62.5 20 C 57 17 50 15 41.5 15 C 33.5 15 26 17 21 20 C 16 23 12.5 27.5 12.5 32 C 12.5 36.5 15.5 41 21 44 M 41.5 61.5 C 73 61.5 83 40 83 32 C 83 15.5 64.5 2.5 41.5 2.5 C 10 2.5 0 24 0 32 C 0 48.5 18.5 61.5 41.5 61.5 M 8 32 C 8 24.5 13.5 19.5 17 17 C 23.5 12.5 32.5 10 42 10 C 51.5 10 60.5 12.5 67 17 C 70.5 19.5 76 24.5 76 32 C 76 44 60 54 42 54 C 32.5 54 23.5 51.5 17 47 C 11.5 43 8 37.5 8 32"/>
+</vector> 

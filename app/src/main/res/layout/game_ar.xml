@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Replaces ArFragment -->
+    <io.github.sceneview.ar.ARSceneView
+        android:id="@+id/ar_scene_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Top UI overlay -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#80000000"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/ar_points_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Points: 0"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/asset_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assets: 4"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:text="Back"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <!-- Bottom UI overlay -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#80000000"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/ar_instruction_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Move device to find surfaces, then tap to place State Farm assets!"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="8dp"
+            android:minLines="2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/catch_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white"
+                android:text="PLACE!"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Center crosshair -->
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:text="+"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="#80000000"
+        android:elevation="5dp"
+        android:contentDescription="Targeting crosshair" />
+
+    <!-- Plane detection status -->
+    <TextView
+        android:id="@+id/plane_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Scanning for surfaces..."
+        android:textColor="#FFFF00"
+        android:textSize="12sp"
+        android:background="#80000000"
+        android:padding="6dp"
+        android:elevation="10dp"
+        android:visibility="visible" />
+</RelativeLayout>

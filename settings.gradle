@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // Add GitHub Packages or other repositories if needed
+        maven { url = uri("https://jitpack.io") }
+        // Mapbox Maven repository - For v11+ no authentication needed
+        maven { 
+            url = uri("https://api.mapbox.com/downloads/v2/releases/maven")
+        }
+    }
+}
+
+rootProject.name = "ar-you-covered"
+include ':app'

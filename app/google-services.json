@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "893340130463",
+    "firebase_url": "https://crested-disk-463018-r0-default-rtdb.firebaseio.com",
+    "project_id": "crested-disk-463018-r0",
+    "storage_bucket": "crested-disk-463018-r0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893340130463:android:c1de88aaa934b4f3eb96aa",
+        "android_client_info": {
+          "package_name": "com.aryoucovered.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWlZVtG0wbvPvTn3VFetoh_6NU3yHhH0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893340130463:android:aa9da82ae06576d0eb96aa",
+        "android_client_info": {
+          "package_name": "com.example.statefarmAR"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWlZVtG0wbvPvTn3VFetoh_6NU3yHhH0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

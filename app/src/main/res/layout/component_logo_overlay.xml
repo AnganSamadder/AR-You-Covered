@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <ImageView
+        android:id="@+id/logo_circle_extra_top"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:src="@drawable/state_farm_circle"
+        android:visibility="invisible"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/logo_oval_top"
+        android:layout_width="83dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:src="@drawable/state_farm_oval_white"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/logo_circle_top"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:src="@drawable/state_farm_circle"
+        android:visibility="invisible"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/logo_oval_bottom_left"
+        android:layout_width="83dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="79dp"
+        android:src="@drawable/state_farm_oval_white"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/logo_circle_bottom_left"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="73.5dp"
+        android:layout_marginStart="148dp"
+        android:src="@drawable/state_farm_circle"
+        android:visibility="invisible"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/logo_oval_bottom_right"
+        android:layout_width="83dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="79dp"
+        android:src="@drawable/state_farm_oval_white"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/logo_circle_bottom_right"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="73.5dp"
+        android:layout_marginStart="231dp"
+        android:src="@drawable/state_farm_circle"
+        android:visibility="invisible"
+        android:alpha="0" />
+
+    <!-- Close button -->
+    <ImageButton
+        android:id="@+id/close_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/red_circle_button"
+        android:src="@drawable/ic_close"
+        android:contentDescription="Close"
+        android:visibility="invisible"
+        android:alpha="0" />
+
+    <!-- Animation labels -->
+    <TextView
+        android:id="@+id/label_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:text="COLLECTION"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:alpha="0" />
+
+    <TextView
+        android:id="@+id/label_extra_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:text="LEADERBOARD"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:alpha="0" />
+
+    <TextView
+        android:id="@+id/label_bottom_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginStart="150dp"
+        android:text="PROFILE"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:alpha="0" />
+
+    <TextView
+        android:id="@+id/label_bottom_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginStart="243dp"
+        android:text="STORE"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:alpha="0" />
+
+</RelativeLayout> 
