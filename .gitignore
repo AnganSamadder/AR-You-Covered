@@ -1,0 +1,63 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android build outputs
+/app/build/
+/build/
+**/build/
+
+# Kotlin compiler files and caches
+.kotlin/
+*.kotlin_builtins
+*.kotlin_metadata
+**/kotlin/
+**/tmp/kotlin-classes/
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# Log files
+*.log
+
+# Android Studio cache
+/.idea/
+.idea/
+
+# Gradle
+.gradle/
+gradle-wrapper.properties
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Firebase
+google-services.json
+
+# Temporary files
+*.tmp
+*.temp
+
+# Sensitive configuration files (IMPORTANT: Keep tokens secure!)
+# Note: local.properties contains the actual tokens and should NOT be committed
+# gradle.properties can be committed as it contains only placeholder values

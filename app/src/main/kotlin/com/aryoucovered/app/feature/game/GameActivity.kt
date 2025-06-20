@@ -60,7 +60,7 @@ class GameActivity : AppCompatActivity() {
         setContentView(R.layout.game_ar)
         objects = ArrayList()
 
-        pointsText = findViewById(R.id.points_text)
+        pointsText = findViewById(R.id.ar_points_text)
         pointsText.text = "Points: $points"
 
         userPhone = FirebaseAuth.getInstance().currentUser?.phoneNumber ?: run {
